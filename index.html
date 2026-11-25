@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9151探花_9151探花官方视频门户_9151探花原创影像社区</title>
+<meta name="description" content="9151探花官方网站，专注原创影像与创作者内容生态的视频品牌门户，提供高清正版作品、创作者访谈、专题企划与社区互动，持续运营值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314171f'/%3E%3Cpath d='M18 40c8-16 16-16 28-8-8 14-18 16-28 8z' fill='%23ff6b3d'/%3E%3Ccircle cx='42' cy='20' r='6' fill='%23f5c542'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --th-ink:#14171f;
+    --th-ink-2:#232833;
+    --th-paper:#f6f4ef;
+    --th-paper-2:#ece8df;
+    --th-amber:#ff6b3d;
+    --th-gold:#f5c542;
+    --th-teal:#2f9e8f;
+    --th-muted:#6c7079;
+    --th-line:#d9d4c9;
+    --th-radius:14px;
+    --th-shadow:0 10px 30px rgba(20,23,31,.10);
+    --th-sticky:96px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--th-sticky);}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--th-paper);
+    color:var(--th-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .th-skip{position:absolute;left:-9999px;top:0;background:var(--th-ink);color:#fff;padding:10px 16px;z-index:200;}
+  .th-skip:focus{left:12px;top:12px;}
+
+  /* ===== 吸顶公告 + 页头 ===== */
+  .th-top-stack{
+    position:sticky;top:0;z-index:100;
+    background:var(--th-paper);
+    box-shadow:0 4px 18px rgba(20,23,31,.07);
+  }
+  .th-announce{
+    background:linear-gradient(90deg,var(--th-ink) 0%,var(--th-ink-2) 55%,#3a2a24 100%);
+    color:#f4efe6;
+    font-size:13px;
+    padding:8px 0;
+  }
+  .th-announce-inner{
+    max-width:1200px;margin:0 auto;padding:0 20px;
+    display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  }
+  .th-announce-tag{
+    background:var(--th-amber);color:#1b1207;font-weight:700;
+    font-size:11px;letter-spacing:.08em;padding:2px 9px;border-radius:20px;white-space:nowrap;
+  }
+  .th-announce-list{display:flex;gap:18px;flex-wrap:wrap;}
+  .th-announce-list a{opacity:.9;border-bottom:1px dashed rgba(244,239,230,.35);}
+  .th-announce-list a:hover{opacity:1;color:var(--th-gold);}
+
+  .th-header{
+    max-width:1200px;margin:0 auto;padding:14px 20px;
+    display:flex;align-items:center;gap:22px;
+  }
+  .th-brand{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+  .th-brand-mark{
+    width:42px;height:42px;border-radius:12px;
+    background:var(--th-ink);display:grid;place-items:center;overflow:hidden;
+  }
+  .th-brand-name{font-weight:800;font-size:19px;letter-spacing:.02em;line-height:1.2;}
+  .th-brand-name small{display:block;font-size:10px;font-weight:500;color:var(--th-muted);letter-spacing:.16em;}
+  .th-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap;}
+  .th-nav a{
+    font-size:14px;padding:7px 12px;border-radius:9px;color:#3b3f47;
+    transition:background .18s ease,color .18s ease;
+  }
+  .th-nav a:hover{background:var(--th-paper-2);color:var(--th-ink);}
+  .th-head-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+  .th-search{
+    display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--th-line);
+    border-radius:30px;padding:5px 6px 5px 14px;min-width:210px;
+  }
+  .th-search input{
+    border:0;outline:0;background:transparent;font-size:13.5px;width:100%;color:var(--th-ink);
+  }
+  .th-search button{
+    border:0;background:var(--th-ink);color:#fff;border-radius:20px;padding:6px 13px;font-size:12.5px;
+  }
+  .th-search button:hover{background:var(--th-amber);color:#1b1207;}
+  .th-burger{
+    display:none;border:1px solid var(--th-line);background:#fff;border-radius:10px;
+    width:42px;height:38px;align-items:center;justify-content:center;
+  }
+  .th-burger span{display:block;width:18px;height:2px;background:var(--th-ink);position:relative;}
+  .th-burger span::before,.th-burger span::after{
+    content:"";position:absolute;left:0;width:18px;height:2px;background:var(--th-ink);
+  }
+  .th-burger span::before{top:-6px;}
+  .th-burger span::after{top:6px;}
+  .th-mobile-panel{
+    display:none;border-top:1px solid var(--th-line);background:var(--th-paper);
+  }
+  .th-mobile-panel.open{display:block;}
+  .th-mobile-panel nav{display:flex;flex-direction:column;padding:10px 20px 18px;gap:2px;}
+  .th-mobile-panel nav a{padding:10px 8px;border-radius:8px;font-size:15px;}
+  .th-mobile-panel nav a:hover{background:var(--th-paper-2);}
+
+  /* ===== 通用 ===== */
+  .th-wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+  .th-section{padding:64px 0;}
+  .th-section + .th-section{border-top:1px solid var(--th-line);}
+  .th-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.18em;
+    font-weight:700;color:var(--th-amber);text-transform:uppercase;margin-bottom:10px;
+  }
+  .th-eyebrow::before{content:"";width:22px;height:2px;background:var(--th-amber);display:block;}
+  h2{
+    font-size:clamp(23px,3vw,32px);line-height:1.3;margin:0 0 14px;letter-spacing:-.01em;
+  }
+  h3{font-size:17.5px;margin:0 0 8px;line-height:1.45;}
+  p{margin:0 0 12px;}
+  .th-lead{color:#464b54;font-size:15.5px;max-width:76ch;}
+  .th-key{color:var(--th-amber);font-weight:700;}
+  .th-btn{
+    display:inline-flex;align-items:center;gap:8px;border-radius:30px;padding:11px 22px;
+    font-size:14px;font-weight:600;border:1px solid transparent;transition:transform .15s ease,box-shadow .2s ease,background .2s ease;
+  }
+  .th-btn:hover{transform:translateY(-2px);}
+  .th-btn-primary{background:var(--th-ink);color:#fff;box-shadow:0 8px 20px rgba(20,23,31,.18);}
+  .th-btn-primary:hover{background:var(--th-amber);color:#1b1207;}
+  .th-btn-ghost{background:transparent;border-color:var(--th-ink);color:var(--th-ink);}
+  .th-btn-ghost:hover{background:var(--th-ink);color:#fff;}
+  .th-btn-soft{background:var(--th-paper-2);color:var(--th-ink);}
+  .th-btn-soft:hover{background:var(--th-gold);}
+  .th-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+  .th-tag{
+    font-size:11.5px;padding:3px 10px;border-radius:20px;background:var(--th-paper-2);
+    color:#4c5158;border:1px solid var(--th-line);
+  }
+  .th-tag.accent{background:rgba(255,107,61,.12);border-color:rgba(255,107,61,.35);color:#b8421d;}
+  .th-meta-row{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--th-muted);}
+
+  /* ===== 首屏 4:6 大幅图文 ===== */
+  .th-hero{padding:46px 0 58px;}
+  .th-hero-grid{
+    display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:44px;align-items:center;
+  }
+  .th-hero h1{
+    font-size:clamp(34px,5vw,56px);line-height:1.12;letter-spacing:-.02em;margin:0 0 8px;font-weight:800;
+  }
+  .th-hero h1 .th-h1-sub{
+    display:block;font-size:clamp(14px,1.6vw,17px);font-weight:600;color:var(--th-muted);
+    letter-spacing:.14em;margin-top:12px;text-transform:uppercase;
+  }
+  .th-hero-desc{font-size:15.5px;color:#464b54;margin:16px 0 20px;max-width:56ch;}
+  .th-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px;}
+  .th-hero-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+    border-top:1px solid var(--th-line);padding-top:20px;
+  }
+  .th-hero-stats .num{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.01em;}
+  .th-hero-stats .num em{font-style:normal;color:var(--th-amber);font-size:15px;margin-left:2px;}
+  .th-hero-stats .lbl{font-size:12.5px;color:var(--th-muted);}
+  .th-hero-visual{
+    position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--th-shadow);
+    border:1px solid var(--th-line);background:#0e1116;
+  }
+  .th-hero-visual svg{width:100%;height:auto;}
+  .th-hero-badge{
+    position:absolute;top:16px;left:16px;background:rgba(20,23,31,.82);color:#fff;
+    font-size:11.5px;letter-spacing:.1em;padding:5px 12px;border-radius:20px;backdrop-filter:blur(6px);
+  }
+  .th-hero-caption{
+    position:absolute;left:0;right:0;bottom:0;padding:20px 22px;color:#fff;
+    background:linear-gradient(180deg,rgba(14,17,22,0) 0%,rgba(14,17,22,.86) 100%);
+  }
+  .th-hero-caption strong{display:block;font-size:16px;margin-bottom:4px;}
+  .th-hero-caption span{font-size:12.5px;opacity:.82;}
+
+  /* ===== 焦点内容 ===== */
+  .th-focus-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:26px;}
+  .th-focus-main{
+    background:#fff;border:1px solid var(--th-line);border-radius:var(--th-radius);overflow:hidden;
+    transition:box-shadow .2s ease,transform .2s ease;
+  }
+  .th-focus-main:hover{box-shadow:var(--th-shadow);transform:translateY(-3px);}
+  .th-focus-main .cover{aspect-ratio:16/9;overflow:hidden;background:#0e1116;}
+  .th-focus-main .cover svg{width:100%;height:100%;}
+  .th-focus-body{padding:22px 24px 24px;}
+  .th-focus-side{display:flex;flex-direction:column;gap:16px;}
+  .th-focus-item{
+    background:#fff;border:1px solid var(--th-line);border-radius:var(--th-radius);
+    padding:18px 20px;transition:border-color .2s ease,transform .2s ease;
+  }
+  .th-focus-item:hover{border-color:var(--th-amber);transform:translateX(4px);}
+  .th-focus-item .idx{font-size:12px;font-weight:800;color:var(--th-amber);letter-spacing:.12em;}
+
+  /* ===== 视频列表（单列图文列表） ===== */
+  .th-video-list{display:flex;flex-direction:column;gap:0;}
+  .th-video-item{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:start;
+    padding:22px 0;border-bottom:1px solid var(--th-line);
+  }
+  .th-video-item:first-child{padding-top:6px;}
+  .th-video-item h3{margin-bottom:6px;}
+  .th-video-item h3 a:hover{color:var(--th-amber);}
+  .th-video-item .abs{font-size:14.2px;color:#4c5158;margin-bottom:6px;}
+  .th-video-stats{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--th-muted);}
+  .th-video-ops{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;max-width:250px;}
+  .th-op{
+    border:1px solid var(--th-line);background:#fff;border-radius:20px;padding:5px 13px;
+    font-size:12.5px;color:#43484f;transition:all .16s ease;white-space:nowrap;
+  }
+  .th-op:hover{border-color:var(--th-ink);}
+  .th-op.liked{background:rgba(255,107,61,.12);border-color:var(--th-amber);color:#b8421d;}
+  .th-op.saved{background:rgba(47,158,143,.12);border-color:var(--th-teal);color:#1f6f64;}
+
+  /* ===== 专题 ===== */
+  .th-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .th-topic-card{
+    background:#fff;border:1px solid var(--th-line);border-radius:var(--th-radius);padding:22px 22px 20px;
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .th-topic-card.featured{background:var(--th-ink);color:#f2ede3;border-color:var(--th-ink);}
+  .th-topic-card.featured .th-topic-status{background:rgba(245,197,66,.18);color:var(--th-gold);}
+  .th-topic-status{
+    align-self:flex-start;font-size:11.5px;padding:3px 11px;border-radius:20px;
+    background:var(--th-paper-2);color:#4c5158;letter-spacing:.04em;
+  }
+  .th-topic-card ul{margin:6px 0 0;padding-left:18px;font-size:13.5px;color:#4c5158;}
+  .th-topic-card.featured ul{color:#c9c2b4;}
+  .th-topic-card ul li{margin-bottom:5px;}
+  .th-topic-card.featured ul li::marker{color:var(--th-gold);}
+
+  /* ===== 关键词解析 ===== */
+  .th-parse{background:var(--th-paper-2);border-radius:20px;padding:38px 36px;}
+  .th-parse h3{margin-top:22px;font-size:18px;}
+  .th-parse p{font-size:14.6px;color:#3f444b;line-height:1.85;}
+  .th-parse h3:first-of-type{margin-top:16px;}
+
+  /* ===== 作者（双列简介） ===== */
+  .th-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;}
+  .th-author-card{
+    background:#fff;border:1px solid var(--th-line);border-radius:var(--th-radius);padding:22px;
+    display:flex;gap:16px;align-items:flex-start;transition:box-shadow .2s ease;
+  }
+  .th-author-card:hover{box-shadow:var(--th-shadow);}
+  .th-avatar{
+    width:58px;height:58px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+    font-weight:800;font-size:21px;color:#fff;overflow:hidden;
+  }
+  .th-author-name{font-weight:700;font-size:15.5px;margin-bottom:2px;}
+  .th-author-field{font-size:12.5px;color:var(--th-amber);font-weight:600;margin-bottom:6px;}
+  .th-author-bio{font-size:13.4px;color:#4c5158;margin-bottom:8px;}
+  .th-author-nums{display:flex;gap:16px;font-size:12px;color:var(--th-muted);}
+  .th-author-more{
+    margin-top:8px;border:0;background:none;color:var(--th-teal);font-size:12.5px;font-weight:600;
+    padding:0;text-decoration:underline;text-underline-offset:3px;
+  }
+
+  /* ===== 评论（双列短评） ===== */
+  .th-comment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+  .th-comment{
+    background:#fff;border:1px solid var(--th-line);border-radius:var(--th-radius);padding:18px 20px;
+    font-size:13.8px;color:#3f444b;
+  }
+  .th-comment .who{display:flex;align-items:center;gap:9px;margin-bottom:8px;}
+  .th-comment .who .dot{
+    width:26px;height:26px;border-radius:50%;background:var(--th-ink);color:#fff;display:grid;
+    place-items:center;font-size:12px;font-weight:700;flex-shrink:0;
+  }
+  .th-comment .who .name{font-weight:600;font-size:13px;}
+  .th-comment .who .time{margin-left:auto;font-size:11.5px;color:var(--th-muted);}
+  .th-score-summary{
+    display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;
+    background:#fff;border:1px solid var(--th-line);border-radius:20px;padding:24px 26px;margin-bottom:22px;
+  }
+  .th-score-big{font-size:46px;font-weight:800;line-height:1;letter-spacing:-.02em;}
+  .th-score-big small{font-size:15px;color:var(--th-muted);font-weight:500;}
+  .th-score-bars{display:flex;flex-direction:column;gap:7px;font-size:12.5px;color:#4c5158;}
+  .th-bar{height:7px;background:var(--th-paper-2);border-radius:20px;overflow:hidden;}
+  .th-bar i{display:block;height:100%;background:var(--th-amber);border-radius:20px;}
+
+  /* ===== 动态 / 合作 / FAQ ===== */
+  .th-two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+  .th-news-list{display:flex;flex-direction:column;gap:0;}
+  .th-news-item{
+    display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;padding:16px 0;
+    border-bottom:1px dashed var(--th-line);
+  }
+  .th-news-item:last-child{border-bottom:0;}
+  .th-news-date{font-size:12px;font-weight:700;color:var(--th-amber);letter-spacing:.04em;}
+  .th-partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;}
+  .th-partner{
+    background:#fff;border:1px solid var(--th-line);border-radius:12px;padding:18px 14px;
+    text-align:center;font-size:13.5px;font-weight:600;color:#3f444b;
+  }
+  .th-partner small{display:block;font-weight:400;font-size:11.5px;color:var(--th-muted);margin-top:3px;}
+  .th-faq details{
+    background:#fff;border:1px solid var(--th-line);border-radius:12px;padding:14px 18px;margin-bottom:10px;
+  }
+  .th-faq summary{
+    cursor:pointer;font-weight:600;font-size:14.5px;list-style:none;display:flex;justify-content:space-between;
+    gap:12px;align-items:center;
+  }
+  .th-faq summary::-webkit-details-marker{display:none;}
+  .th-faq summary::after{content:"+";color:var(--th-amber);font-size:19px;font-weight:700;line-height:1;}
+  .th-faq details[open] summary::after{content:"–";}
+  .th-faq details p{margin:12px 0 2px;font-size:13.8px;color:#4c5158;}
+
+  /* ===== 投稿 / 联系 ===== */
+  .th-cta{
+    background:linear-gradient(120deg,var(--th-ink) 0%,#2b2320 70%,#4a3226 100%);
+    color:#f4efe6;border-radius:22px;padding:44px 40px;
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center;
+  }
+  .th-cta h2{color:#fff;margin-bottom:8px;}
+  .th-cta p{color:#c9c2b4;font-size:14.5px;max-width:60ch;}
+  .th-cta-actions{display:flex;flex-direction:column;gap:10px;}
+
+  /* ===== 页脚 ===== */
+  .th-footer{background:var(--th-ink);color:#c2bcb0;padding:56px 0 26px;margin-top:20px;}
+  .th-footer-grid{display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:34px;}
+  .th-footer h4{color:#fff;font-size:14px;margin:0 0 12px;letter-spacing:.06em;}
+  .th-footer a{font-size:13.2px;display:block;padding:3px 0;color:#c2bcb0;}
+  .th-footer a:hover{color:var(--th-gold);}
+  .th-footer-brand p{font-size:13px;line-height:1.8;max-width:34ch;}
+  .th-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:18px;
+    font-size:12.2px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#9a958b;
+  }
+
+  /* ===== Toast / 弹窗 / 回到顶部 ===== */
+  .th-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+    background:var(--th-ink);color:#fff;font-size:13.5px;padding:11px 20px;border-radius:30px;
+    box-shadow:0 10px 30px rgba(20,23,31,.3);transition:all .28s ease;z-index:300;
+  }
+  .th-toast.show{opacity:1;transform:translate(-50%,0);}
+  .th-modal-mask{
+    position:fixed;inset:0;background:rgba(20,23,31,.55);display:none;z-index:250;
+    align-items:center;justify-content:center;padding:20px;
+  }
+  .th-modal-mask.open{display:flex;}
+  .th-modal{
+    background:var(--th-paper);border-radius:18px;max-width:520px;width:100%;padding:28px 26px;
+    box-shadow:0 20px 60px rgba(20,23,31,.35);max-height:86vh;overflow:auto;
+  }
+  .th-modal h3{font-size:19px;margin-bottom:10px;}
+  .th-modal p{font-size:14px;color:#464b54;}
+  .th-modal .th-modal-close{
+    margin-top:18px;border:0;background:var(--th-ink);color:#fff;border-radius:24px;padding:9px 20px;font-size:13.5px;
+  }
+  .th-modal label{display:block;font-size:12.5px;font-weight:600;margin:12px 0 4px;}
+  .th-modal input,.th-modal textarea{
+    width:100%;border:1px solid var(--th-line);border-radius:9px;padding:9px 11px;font-size:13.5px;
+    font-family:inherit;background:#fff;color:var(--th-ink);
+  }
+  .th-totop{
+    position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;border:0;
+    background:var(--th-ink);color:#fff;font-size:17px;display:none;place-items:center;z-index:220;
+    box-shadow:0 8px 22px rgba(20,23,31,.28);
+  }
+  .th-totop.show{display:grid;}
+  .th-totop:hover{background:var(--th-amber);color:#1b1207;}
+
+  .th-search-feedback{
+    font-size:13px;color:var(--th-muted);margin-top:14px;min-height:20px;
+  }
+  .th-search-feedback.active{color:var(--th-amber);font-weight:600;}
+
+  @media (max-width:960px){
+    :root{--th-sticky:104px;}
+    .th-nav{display:none;}
+    .th-search{display:none;}
+    .th-burger{display:flex;}
+    .th-hero-grid{grid-template-columns:minmax(0,1fr);gap:30px;}
+    .th-hero-visual{order:-1;}
+    .th-focus-grid{grid-template-columns:minmax(0,1fr);}
+    .th-footer-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+    .th-cta{grid-template-columns:minmax(0,1fr);padding:34px 26px;}
+    .th-cta-actions{flex-direction:row;flex-wrap:wrap;}
+    .th-video-item{grid-template-columns:minmax(0,1fr);}
+    .th-video-ops{justify-content:flex-start;max-width:none;}
+    .th-parse{padding:28px 22px;}
+  }
+  @media (max-width:640px){
+    :root{--th-sticky:110px;}
+    .th-section{padding:48px 0;}
+    .th-hero-stats{grid-template-columns:minmax(0,1fr);gap:12px;}
+    .th-hero-stats .num{font-size:24px;}
+    .th-score-summary{grid-template-columns:minmax(0,1fr);}
+    .th-footer-grid{grid-template-columns:minmax(0,1fr);}
+    .th-announce{font-size:12px;}
+    .th-announce-list{gap:10px;}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+<a class="th-skip" href="#th-main">跳至正文内容</a>
+
+<div class="th-top-stack" id="th-top">
+  <div class="th-announce">
+    <div class="th-announce-inner">
+      <span class="th-announce-tag">官方发布</span>
+      <div class="th-announce-list">
+        <a href="#th-topics">「城市夜行影像计划」第二季正式开拍，首批 6 位创作者已进组</a>
+        <a href="#th-videos">本周新增 14 部高清原创短片，支持 4K 下载</a>
+        <a href="#th-create">创作者投稿通道 11 月 30 日截止，报名从速</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="th-header">
+      <a class="th-brand" href="#th-top">
+        <span class="th-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" width="42" height="42"><rect width="42" height="42" fill="#14171f"/><path d="M11 27c6-12 12-12 20-6-6 10-13 12-20 6z" fill="#ff6b3d"/><circle cx="29" cy="13" r="4" fill="#f5c542"/></svg>
+        </span>
+        <span class="th-brand-name">9151探花<small>OFFICIAL VIDEO</small></span>
+      </a>
+      <nav class="th-nav" aria-label="主导航">
+        <a href="#th-videos">视频</a>
+        <a href="#th-topics">专题</a>
+        <a href="#th-parse">解读</a>
+        <a href="#th-authors">创作者</a>
+        <a href="#th-reviews">口碑</a>
+        <a href="#th-news">动态</a>
+        <a href="#th-faq">帮助</a>
+      </nav>
+      <div class="th-head-tools">
+        <div class="th-search">
+          <input id="th-search-input" type="search" placeholder="搜索作品 / 创作者 / 专题" aria-label="站内搜索">
+          <button type="button" id="th-search-btn">搜索</button>
+        </div>
+        <button class="th-burger" id="th-burger" aria-label="展开导航" aria-expanded="false" aria-controls="th-mobile-panel"><span></span></button>
+      </div>
+    </div>
+    <div class="th-mobile-panel" id="th-mobile-panel">
+      <nav aria-label="移动端导航">
+        <a href="#th-videos">视频内容</a>
+        <a href="#th-topics">专题企划</a>
+        <a href="#th-parse">关键词解读</a>
+        <a href="#th-authors">创作者矩阵</a>
+        <a href="#th-reviews">用户口碑</a>
+        <a href="#th-news">企业动态</a>
+        <a href="#th-faq">常见问题</a>
+        <a href="#th-create">投稿与联系</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<main id="th-main">
+
+  <!-- S2 品牌首屏 -->
+  <section class="th-hero th-wrap" id="th-hero">
+    <div class="th-hero-grid">
+      <div>
+        <span class="th-eyebrow">9151探花 · 官方网站</span>
+        <h1>9151探花
+          <span class="th-h1-sub">企业级原创视频品牌门户</span>
+        </h1>
+        <p class="th-hero-desc">
+          作为深耕原创影像领域的品牌平台，9151探花官方网站以“真实、温暖、有力量”为内容准则，
+          为创作者与企业搭建高品质内容生态。我们把专业影视级的拍摄标准与社区化的表达方式放在一起，
+          让每一部作品都能被看见、被讨论、被记住。
+        </p>
+        <div class="th-hero-actions">
+          <a class="th-btn th-btn-primary" href="#th-videos">观看精选作品</a>
+          <a class="th-btn th-btn-ghost" href="#th-create">我要投稿</a>
+          <button class="th-btn th-btn-soft" type="button" data-th-open="share">分享官网</button>
+        </div>
+        <div class="th-hero-stats">
+          <div>
+            <div class="num">2,860<em>+</em></div>
+            <div class="lbl">在架高清正版作品</div>
+          </div>
+          <div>
+            <div class="num">418<em>位</em></div>
+            <div class="lbl">签约与认证创作者</div>
+          </div>
+          <div>
+            <div class="num">1,270<em>万</em></div>
+            <div class="lbl">社区月均播放人次</div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="th-hero-visual" style="margin:0">
+        <span class="th-hero-badge">本季主推 · 原创企划</span>
+        <svg viewBox="0 0 900 620" role="img" aria-label="夜间城市街巷与手持摄影机的创作者剪影主视觉">
+          <defs>
+            <linearGradient id="thHeroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1a2233"/><stop offset="1" stop-color="#412a24"/>
+            </linearGradient>
+            <linearGradient id="thHeroGlow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff6b3d" stop-opacity=".9"/><stop offset="1" stop-color="#f5c542" stop-opacity=".1"/>
+            </linearGradient>
+          </defs>
+          <rect width="900" height="620" fill="url(#thHeroSky)"/>
+          <circle cx="700" cy="130" r="86" fill="#f5c542" opacity=".22"/>
+          <circle cx="700" cy="130" r="46" fill="#f5c542" opacity=".55"/>
+          <g opacity=".55" fill="#0d1119">
+            <rect x="0" y="330" width="120" height="290"/><rect x="130" y="270" width="95" height="350"/>
+            <rect x="240" y="360" width="110" height="260"/><rect x="680" y="300" width="110" height="320"/>
+            <rect x="800" y="250" width="100" height="370"/>
+          </g>
+          <g fill="#ff6b3d" opacity=".8">
+            <rect x="150" y="300" width="18" height="12"/><rect x="185" y="300" width="18" height="12"/>
+            <rect x="150" y="335" width="18" height="12"/><rect x="720" y="335" width="18" height="12"/>
+            <rect x="760" y="375" width="18" height="12"/><rect x="820" y="290" width="18" height="12"/>
+          </g>
+          <rect x="0" y="470" width="900" height="150" fill="#0b0e14" opacity=".92"/>
+          <g>
+            <path d="M330 470l14-96h120l14 96z" fill="#20232b"/>
+            <circle cx="404" cy="330" r="42" fill="#20232b"/>
+            <rect x="440" y="360" width="78" height="34" rx="8" fill="#16181e"/>
+            <circle cx="500" cy="377" r="15" fill="#ff6b3d"/>
+            <rect x="380" y="380" width="56" height="90" rx="12" fill="#16181e"/>
+          </g>
+          <rect x="120" y="510" width="620" height="4" fill="url(#thHeroGlow)"/>
+          <g stroke="#f5c542" stroke-width="2" opacity=".5" fill="none">
+            <circle cx="500" cy="377" r="34"/><circle cx="500" cy="377" r="52"/>
+          </g>
+        </svg>
+        <figcaption class="th-hero-caption">
+          <strong>《夜行档案·第一卷》：城市凌晨四点的光</strong>
+          <span>本周焦点 · 时长 18:42 · 4K HDR · 原创正版</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="th-search-feedback" id="th-search-feedback" aria-live="polite"></div>
+  </section>
+
+  <!-- S3 焦点 + 视频列表 -->
+  <section class="th-section th-wrap" id="th-videos">
+    <span class="th-eyebrow">焦点与热门</span>
+    <h2>9151探花本周焦点：用影像记录真实的城市肌理</h2>
+    <p class="th-lead">
+      9151探花官方网站每周更新原创精品内容，从城市探索到人物访谈，从实用技巧到品牌故事。
+      下面这组焦点作品由编辑团队与创作者共同遴选，兼顾专业表达与社区口碑。
+    </p>
+
+    <div class="th-focus-grid" style="margin-top:26px">
+      <article class="th-focus-main">
+        <div class="cover">
+          <svg viewBox="0 0 800 450" role="img" aria-label="焦点作品夜行档案的城市天桥与霓虹灯轨插画">
+            <defs>
+              <linearGradient id="thFocusSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#241a2e"/><stop offset="1" stop-color="#0f1219"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="450" fill="url(#thFocusSky)"/>
+            <g opacity=".9">
+              <rect x="60" y="120" width="70" height="330" fill="#191c24"/>
+              <rect x="150" y="60" width="90" height="390" fill="#141721"/>
+              <rect x="640" y="90" width="100" height="360" fill="#191c24"/>
+            </g>
+            <g stroke="#ff6b3d" stroke-width="5" fill="none" opacity=".9">
+              <path d="M0 300c160-60 300 60 460-10s220-90 340-30"/>
+            </g>
+            <g stroke="#f5c542" stroke-width="2.5" fill="none" opacity=".7">
+              <path d="M0 350c180-40 320 40 480-20s200-60 320-10"/>
+            </g>
+            <rect x="250" y="230" width="300" height="18" rx="6" fill="#2a2f3a"/>
+            <rect x="270" y="248" width="18" height="120" fill="#2a2f3a"/>
+            <rect x="512" y="248" width="18" height="120" fill="#2a2f3a"/>
+            <circle cx="400" cy="200" r="26" fill="#ff6b3d" opacity=".85"/>
+            <path d="M186 450h420" stroke="#ff6b3d" stroke-width="3" opacity=".4"/>
+          </svg>
+        </div>
+        <div class="th-focus-body">
+          <div class="th-meta-row" style="margin-bottom:8px">
+            <span>编辑推荐</span><span>2026-11-19</span><span>播放 42.6 万</span>
+          </div>
+          <h3><a href="#th-videos">夜行档案·第一卷：城市凌晨四点的光</a></h3>
+          <p class="abs">
+            我们跟着三位夜班工作者走过天桥、早市和末班公交，用长镜头记录城市在沉睡与苏醒之间的那一段灰度。
+            全片使用 4K HDR 拍摄，声音设计由 9151探花 声音工作室独立完成。
+          </p>
+          <div class="th-tags">
+            <span class="th-tag accent">城市探索</span><span class="th-tag">日常记录</span><span class="th-tag">原创正版</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="th-focus-side">
+        <article class="th-focus-item">
+          <div class="idx">01 · 深度测评</div>
+          <h3><a href="#th-videos">三台老式手持机横评：低成本能否拍出电影感</a></h3>
+          <p class="abs">用同一段脚本、同一处街景，测试三台二手设备在弱光与动态范围上的差异，附完整参数对照表。</p>
+          <div class="th-tags"><span class="th-tag">实用技巧</span><span class="th-tag">器材</span></div>
+        </article>
+        <article class="th-focus-item">
+          <div class="idx">02 · 人物访谈</div>
+          <h3><a href="#th-videos">专访：她用十年时间记录一条老街的消失</a></h3>
+          <p class="abs">从胶片到数字，从旁观到参与，一位独立纪录者的创作伦理与自我怀疑。</p>
+          <div class="th-tags"><span class="th-tag">人物访谈</span><span class="th-tag">在地文化</span></div>
+        </article>
+        <article class="th-focus-item">
+          <div class="idx">03 · 创作幕后</div>
+          <h3><a href="#th-videos">一部五分钟短片的诞生：从分镜到调色</a></h3>
+          <p class="abs">完整拆解 9151探花 编辑部的内部作业流程，含分镜表模板与调色思路公开。</p>
+          <div class="th-tags"><span class="th-tag">创作幕后</span><span class="th-tag">教程干货</span></div>
+        </article>
+      </div>
+    </div>
+
+    <h3 style="margin-top:44px;font-size:20px">热门视频流</h3>
+    <div class="th-video-list" id="th-video-list">
+      <article class="th-video-item">
+        <div>
+          <h3><a href="#th-videos">在菜市场拍一支温柔的城市短片</a></h3>
+          <p class="abs">清晨六点半的摊位、吆喝与雾气，是最不需要布置的布景。分享自然光下的跟拍路径与收音方式。</p>
+          <div class="th-tags"><span class="th-tag">城市探索</span><span class="th-tag">日常记录</span></div>
+          <div class="th-video-stats" style="margin-top:8px"><span>@阿榆的记录本</span><span>播放 18.3 万</span><span>点赞 <b data-th-like-count="a1">3,204</b></span><span>收藏 <b data-th-save-count="a1">1,118</b></span></div>
+        </div>
+        <div class="th-video-ops">
+          <button class="th-op" type="button" data-th-like="a1" aria-pressed="false">♡ 点赞</button>
+          <button class="th-op" type="button" data-th-save="a1" aria-pressed="false">☆ 收藏</button>
+          <button class="th-op" type="button" data-th-copy="在菜市场拍一支温柔的城市短片">复制链接</button>
+        </div>
+      </article>
+
+      <article class="th-video-item">
+        <div>
+          <h3><a href="#th-videos">新手剪辑的五个陷阱：我们踩过的坑都在这</a></h3>
+          <p class="abs">节奏错位、音乐压过同期声、转场滥用……每条都配一段错误示范与修正版对照。</p>
+          <div class="th-tags"><span class="th-tag">教程干货</span><span class="th-tag">剪辑</span></div>
+          <div class="th-video-stats" style="margin-top:8px"><span>@剪刀手老葛</span><span>播放 26.1 万</span><span>点赞 <b data-th-like-count="a2">5,742</b></span><span>收藏 <b data-th-save-count="a2">2,860</b></span></div>
+        </div>
+        <div class="th-video-ops">
+          <button class="th-op" type="button" data-th-like="a2" aria-pressed="false">♡ 点赞</button>
+          <button class="th-op" type="button" data-th-save="a2" aria-pressed="false">☆ 收藏</button>
+          <button class="th-op" type="button" data-th-copy="新手剪辑的五个陷阱：我们踩过的坑都在这">复制链接</button>
+        </div>
+      </article>
+
+      <article class="th-video-item">
+        <div>
+          <h3><a href="#th-videos">一间只放映独立短片的小影院，开了九年</a></h3>
+          <p class="abs">老板说他不挑片，只挑“有没有认真做完”。我们在这里待了整整一个周末。</p>
+          <div class="th-tags"><span class="th-tag">品牌故事</span><span class="th-tag">在地文化</span></div>
+          <div class="th-video-stats" style="margin-top:8px"><span>@灯下放映室</span><span>播放 12.7 万</span><span>点赞 <b data-th-like-count="a3">2,015</b></span><span>收藏 <b data-th-save-count="a3">906</b></span></div>
+        </div>
+        <div class="th-video-ops">
+          <button class="th-op" type="button" data-th-like="a3" aria-pressed="false">♡ 点赞</button>
+          <button class="th-op" type="button" data-th-save="a3" aria-pressed="false">☆ 收藏</button>
+          <button class="th-op" type="button" data-th-copy="一间只放映独立短片的小影院，开了九年">复制链接</button>
+        </div>
+      </article>
+
+      <article class="th-video-item">
+        <div>
+          <h3><a href="#th-videos">南方的雨季怎么拍？三种天气方案实测</a></h3>
+          <p class="abs">雨天反而是检验镜头与策略的时候。防水、反光、水汽三种情况下的取景与防守拍摄。</p>
+          <div class="th-tags"><span class="th-tag">实用技巧</span><span class="th-tag">旅行见闻</span></div>
+          <div class="th-video-stats" style="margin-top:8px"><span>@阿榆的记录本</span><span>播放 9.4 万</span><span>点赞 <b data-th-like-count="a4">1,486</b></span><span>收藏 <b data-th-save-count="a4">712</b></span></div>
+        </div>
+        <div class="th-video-ops">
+          <button class="th-op" type="button" data-th-like="a4" aria-pressed="false">♡ 点赞</button>
+          <button class="th-op" type="button" data-th-save="a4" aria-pressed="false">☆ 收藏</button>
+          <button class="th-op" type="button" data-th-copy="南方的雨季怎么拍？三种天气方案实测">复制链接</button>
+        </div>
+      </article>
+
+      <article class="th-video-item">
+        <div>
+          <h3><a href="#th-videos">给父母拍一部纪录片，从一次失败的采访开始</a></h3>
+          <p class="abs">第一次拍摄被拒绝，第三次终于坐下来。关于亲情影像的沟通方法与镜头距离。</p>
+          <div class="th-tags"><span class="th-tag">情感故事</span><span class="th-tag">治愈影像</span></div>
+          <div class="th-video-stats" style="margin-top:8px"><span>@周南的镜头</span><span>播放 31.8 万</span><span>点赞 <b data-th-like-count="a5">7,432</b></span><span>收藏 <b data-th-save-count="a5">3,306</b></span></div>
+        </div>
+        <div class="th-video-ops">
+          <button class="th-op" type="button" data-th-like="a5" aria-pressed="false">♡ 点赞</button>
+          <button class="th-op" type="button" data-th-save="a5" aria-pressed="false">☆ 收藏</button>
+          <button class="th-op" type="button" data-th-copy="给父母拍一部纪录片，从一次失败的采访开始">复制链接</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- S4 专题 -->
+  <section class="th-section th-wrap" id="th-topics">
+    <span class="th-eyebrow">专题企划</span>
+    <h2>9151探花专题企划：让内容生态持续长出新的枝干</h2>
+    <p class="th-lead">专题是平台的骨架，也是创作者彼此呼应的场域。每个专题都标明更新状态与内容条目，方便你按兴趣深入。</p>
+    <div class="th-topic-grid" style="margin-top:24px">
+      <article class="th-topic-card featured">
+        <span class="th-topic-status">进行中 · 已更新 6 期</span>
+        <h3>城市夜行影像计划</h3>
+        <p style="font-size:13.8px">聚焦夜间城市里的人与空间，鼓励创作者用长镜头与自然声讲述被忽略的时段故事。</p>
+        <ul>
+          <li>《夜行档案·第一卷》已上线</li>
+          <li>《凌晨四点的早市》拍摄手记公开</li>
+          <li>《末班车上的人》开放投稿中</li>
+        </ul>
+      </article>
+      <article class="th-topic-card">
+        <span class="th-topic-status">已完结 · 共 4 期</span>
+        <h3>一间店的十年</h3>
+        <p style="font-size:13.8px">走访城市里经营超过十年的小店，记录手艺、账本与日常里那些不肯折价的部分。</p>
+        <ul>
+          <li>老式理发店：一把椅子的三十年</li>
+          <li>修表铺：时间在这里变慢</li>
+          <li>深夜书店：读者与店主的长夜</li>
+        </ul>
+      </article>
+      <article class="th-topic-card">
+        <span class="th-topic-status">征集中 · 报名开启</span>
+        <h3>第一支短片挑战</h3>
+        <p style="font-size:13.8px">面向新创作者的入门企划，提供选题库、剪辑模板与导师点评，作品将在官网首页展映。</p>
+        <ul>
+          <li>报名截止：11 月 30 日</li>
+          <li>提交要求：3–8 分钟原创内容</li>
+          <li>入选可获得官方推荐与流量扶持</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- M15 关键词解析 -->
+  <section class="th-section th-wrap" id="th-parse">
+    <span class="th-eyebrow">关键词解读</span>
+    <h2>深度解析：9151探花品牌名背后的内容逻辑</h2>
+    <div class="th-parse">
+      <p>
+        很多第一次来到 9151探花官方网站 的访客都会先问同一个问题：这个名字到底指什么？在我们的品牌语境里，
+        “探花”并不是一个被随意拼贴的词汇，它指向一种观看姿态——不急着抵达终点，而是愿意在途中停下来，
+        把那些容易被忽略的细节看清楚。9151探花 把这种姿态变成了内容方法论：先观察，再靠近，最后才举起镜头。
+        这也是为什么我们的作品列表里，有大量关于街巷、手艺、普通人和旧物的题材，而不是只追逐热点。
+      </p>
+
+      <h3>一、从观看方式到内容标准：探花的三种镜头距离</h3>
+      <p>
+        在 9151探花 的创作手册中，我们把镜头距离分成三种：远观、平视、贴近。远观负责建立空间与秩序，
+        让观众知道故事发生在怎样的城市与季节里；平视负责建立信任，让被拍摄者不必表演，只需要生活；
+        贴近负责交付细节，一双手的纹理、一盏灯的色温、一句没说完的话。三种距离在成片里按节奏交替，
+        形成我们所说的“探花式叙事”。这套标准并非文学化的修辞，而是被写进了剪辑规范：单条视频中，
+        远观镜头占比不超过三成，平视镜头至少占一半，贴近镜头用于情绪落点。许多签约创作者反馈，
+        正是这套看似刻板的比例，让他们的作品第一次有了可辨认的呼吸感。
+      </p>
+
+      <h3>二、9151 的数字含义与社区编号体系</h3>
+      <p>
+        数字部分同样有具体所指。9151 是 9151探花 内容库的原始编号前缀，最早用于内部归档：
+        9 代表影像类，1 代表第一内容线，5 代表五分钟以上中长片，末位 1 代表原创首发。
+        随着平台成长，这套编号被保留下来，成为创作者之间的暗号——在投稿表单里填上 9151，
+        意味着你提交的是原创、首发、时长合格的作品，会进入优先审核通道。今天，9151 已经不只属于编辑部，
+        它变成了社区共同维护的编号体系，也是 9151探花 作为一个内容生态平台最朴素的自我说明：
+        我们相信可追溯的来源、可验证的原创、可讨论的表达。
+      </p>
+
+      <h3>三、平台如何把关键词变成可运营的内容生态</h3>
+      <p>
+        一个品牌词要真正立住，必须落到可运营的机制上。9151探花 的做法是把关键词拆成四条运营线：
+        其一是选题线，每月由编辑与创作者共同提出 20 个候选选题，投票选出 6 个进入制作；
+        其二是制作线，提供设备借用、录音棚与调色支持，降低新人的启动成本；
+        其三是分发线，官网、社区与专题页三处同步展映，重要作品会配发创作手记；
+        其四是反馈线，评论区与评分体系直接进入下一轮选题评审。四条线闭环运转，
+        使得 9151探花 的精品内容不是偶发的结果，而是持续运营的产物。
+        我们也在意口碑：每一部重点作品上线后，运营团队会整理观众评价中的高频词，
+        作为下一季内容方向的参考。这种“用户至上”的笨办法，反而让品牌在垂直领域里稳住了位置。
+      </p>
+
+      <h3>四、面向未来的品牌承诺：真实、正版与长期主义</h3>
+      <p>
+        在版权与真实性上，9151探花 的立场一向明确：所有上架作品均经过原创核验，音乐、字体与素材来源可查，
+        官方发布的内容带有统一标识。我们不回避商业，但坚持商业不能侵蚀表达——植入内容必须在片头标注，
+        测评类作品不接受排他性条款。面向未来，9151探花 计划把创作者扶持做成长期项目，
+        包括每年两期的线下工作坊、面向学生的公益影像课程，以及与社会机构合作的在地文化记录计划。
+        我们相信，一个视频品牌真正的资产不是流量数字，而是那些被认真拍下来、并且在多年之后仍然值得重看的内容。
+        这也是我们邀请你持续关注 9151探花官方网站 的理由：这里的每一次更新，都对应着某个人认真生活过的一段时间。
+      </p>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（双列简介） -->
+  <section class="th-section th-wrap" id="th-authors">
+    <span class="th-eyebrow">创作者矩阵</span>
+    <h2>9151探花创作者：构成内容生态的四种笔触</h2>
+    <p class="th-lead">他们来自不同城市、不同职业，但共享同一套对真实的执着。点击可查看作者档案。</p>
+    <div class="th-author-grid" style="margin-top:24px">
+      <article class="th-author-card">
+        <div class="th-avatar" style="background:linear-gradient(135deg,#ff6b3d,#f5c542)">榆</div>
+        <div>
+          <div class="th-author-name">阿榆的记录本</div>
+          <div class="th-author-field">城市探索 · 日常记录</div>
+          <p class="th-author-bio">在南方城市生活了十二年，习惯清晨出门，用一支定焦镜头记录菜市场、天桥与雨天。她相信好画面来自等待，而不是调度。作品以自然声与长镜头见长，曾在平台专题《城市夜行影像计划》中担任主创。</p>
+          <div class="th-author-nums"><span>作品 86</span><span>粉丝 12.4 万</span></div>
+          <button class="th-author-more" type="button" data-th-author="阿榆的记录本|城市探索 · 日常记录|南方城市影像记录者，擅长自然光与同期声，代表作《菜市场的清晨》《南方的雨季》。">查看档案</button>
+        </div>
+      </article>
+      <article class="th-author-card">
+        <div class="th-avatar" style="background:linear-gradient(135deg,#2f9e8f,#1f6f64)">葛</div>
+        <div>
+          <div class="th-author-name">剪刀手老葛</div>
+          <div class="th-author-field">教程干货 · 剪辑思路</div>
+          <p class="th-author-bio">前广告公司剪辑师，现全职做教学内容。他的视频几乎不出现本人，只有屏幕、时间线和大量错误示范。擅长把复杂流程拆成可以照着做的步骤，被观众称为“最不藏私的剪辑老师”。</p>
+          <div class="th-author-nums"><span>作品 132</span><span>粉丝 21.7 万</span></div>
+          <button class="th-author-more" type="button" data-th-author="剪刀手老葛|教程干货 · 剪辑思路|前广告剪辑师，专注把流程讲清楚，代表作《新手剪辑的五个陷阱》《五分钟短片拆解》。">查看档案</button>
+        </div>
+      </article>
+      <article class="th-author-card">
+        <div class="th-avatar" style="background:linear-gradient(135deg,#4a6fa5,#22334d)">周</div>
+        <div>
+          <div class="th-author-name">周南的镜头</div>
+          <div class="th-author-field">人物访谈 · 情感故事</div>
+          <p class="th-author-bio">纪录片方向创作者，关注家庭关系与代际沟通。拍摄前会花大量时间与被访者相处，常常先放下机器。他认为采访的本质是陪对方坐一会儿，作品节奏舒缓，情绪落点克制而准确。</p>
+          <div class="th-author-nums"><span>作品 54</span><span>粉丝 9.8 万</span></div>
+          <button class="th-author-more" type="button" data-th-author="周南的镜头|人物访谈 · 情感故事|纪录片创作者，关注家庭与代际，代表作《给父母拍一部纪录片》《老屋里的三个人》。">查看档案</button>
+        </div>
+      </article>
+      <article class="th-author-card">
+        <div class="th-avatar" style="background:linear-gradient(135deg,#8a5cc4,#4a2f78)">灯</div>
+        <div>
+          <div class="th-author-name">灯下放映室</div>
+          <div class="th-author-field">品牌故事 · 在地文化</div>
+          <p class="th-author-bio">由三位影院从业者组成的创作小组，专注记录小空间里的长期主义：独立影院、旧书店、修表铺。他们的片子常以一个空间为圆心，慢慢扩展到人的选择与时代的变迁，画面安静，信息密度高。</p>
+          <div class="th-author-nums"><span>作品 41</span><span>粉丝 7.2 万</span></div>
+          <button class="th-author-more" type="button" data-th-author="灯下放映室|品牌故事 · 在地文化|三人创作小组，记录小空间的长期主义，代表作《一间只放映独立短片的小影院》。">查看档案</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- S6 口碑（双列短评 + 评分摘要） -->
+  <section class="th-section th-wrap" id="th-reviews">
+    <span class="th-eyebrow">用户口碑</span>
+    <h2>9151探花口碑摘要：来自社区的真实反馈</h2>
+    <div class="th-score-summary">
+      <div>
+        <div class="th-score-big">4.8<small> / 5</small></div>
+        <div style="font-size:12.5px;color:var(--th-muted)">基于 3,482 条社区评价</div>
+      </div>
+      <div class="th-score-bars">
+        <div>画质与声音 <span class="th-bar"><i style="width:96%"></i></span></div>
+        <div>内容真实度 <span class="th-bar"><i style="width:94%"></i></span></div>
+        <div>更新稳定性 <span class="th-bar"><i style="width:91%"></i></span></div>
+        <div>社区氛围 <span class="th-bar"><i style="width:89%"></i></span></div>
+      </div>
+    </div>
+    <div class="th-comment-grid">
+      <div class="th-comment">
+        <div class="who"><span class="dot">林</span><span class="name">林间慢跑</span><span class="time">2 天前</span></div>
+        第一次在 9151探花 看到讲菜市场的片子，居然没有配煽情音乐，就那样安静地拍。看完自己也想去早市走一圈。
+      </div>
+      <div class="th-comment">
+        <div class="who"><span class="dot">K</span><span class="name">K先生不看片</span><span class="time">4 天前</span></div>
+        剪辑那期太实用了，把错误示范和修正版放一起对比，比我买的课讲得清楚。已经收藏，准备反复看。
+      </div>
+      <div class="th-comment">
+        <div class="who"><span class="dot">阿</span><span class="name">阿岚的阳台</span><span class="time">5 天前</span></div>
+        画质是真的好，夜戏暗部没有糊成一片。作为普通观众，我最在意看起来舒不舒服，这点官网做得挺专业。
+      </div>
+      <div class="th-comment">
+        <div class="who"><span class="dot">老</span><span class="name">老周修表</span><span class="time">1 周前</span></div>
+        你们拍那家修表铺的时候，我在店里。片子播出来后有几个老顾客专门回来坐了坐，这种感觉挺难得的。
+      </div>
+      <div class="th-comment">
+        <div class="who"><span class="dot">小</span><span class="name">小满不满</span><span class="time">1 周前</span></div>
+        投稿流程比想象中顺，表单填完三天就收到回复，虽然没入选，但给了很具体的修改建议，这点很加分。
+      </div>
+      <div class="th-comment">
+        <div class="who"><span class="dot">映</span><span class="name">放映员小何</span><span class="time">1 周前</span></div>
+        唯一想提的意见是专题页可以再多一点片单导航，有些老片子得翻很久才能找到，希望后续优化。
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 动态 + 合作 -->
+  <section class="th-section th-wrap" id="th-news">
+    <span class="th-eyebrow">企业动态与伙伴</span>
+    <h2>9151探花官方动态：持续运营中的内容与社区</h2>
+    <div class="th-two-col" style="margin-top:24px">
+      <div>
+        <h3 style="font-size:18px">企业动态</h3>
+        <div class="th-news-list">
+          <div class="th-news-item">
+            <div class="th-news-date">11-20</div>
+            <div><strong>第二季创作者工作坊开放报名</strong><p style="font-size:13.5px;margin:4px 0 0;color:#4c5158">为期两天的线下课程，覆盖选题、收音与调色，限额 30 人，官网报名通道已开启。</p></div>
+          </div>
+          <div class="th-news-item">
+            <div class="th-news-date">11-16</div>
+            <div><strong>内容库完成 4K 版本升级</strong><p style="font-size:13.5px;margin:4px 0 0;color:#4c5158">重点作品已全部替换为 4K 母版，支持在线高清播放与授权下载，画质口碑进一步提升。</p></div>
+          </div>
+          <div class="th-news-item">
+            <div class="th-news-date">11-09</div>
+            <div><strong>与三家在地文化机构达成合作</strong><p style="font-size:13.5px;margin:4px 0 0;color:#4c5158">共同推进城市影像档案计划，首期将记录 12 处老建筑的日常使用状态。</p></div>
+          </div>
+          <div class="th-news-item">
+            <div class="th-news-date">10-28</div>
+            <div><strong>社区评分体系上线试运行</strong><p style="font-size:13.5px;margin:4px 0 0;color:#4c5158">观众可从画质、真实度、节奏等维度评分，结果将用于选题评审与创作者激励。</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:18px">合作品牌与伙伴</h3>
+        <div class="th-partner-grid" style="margin-top:12px">
+          <div class="th-partner">光合书店<small>场地支持</small></div>
+          <div class="th-partner">南山影像器材<small>设备合作</small></div>
+          <div class="th-partner">城市文化档案馆<small>内容共建</small></div>
+          <div class="th-partner">木刻声音工作室<small>声音设计</small></div>
+          <div class="th-partner">青石独立影院<small>展映伙伴</small></div>
+          <div class="th-partner">拾光印刷<small>物料支持</small></div>
+        </div>
+        <div class="th-tags" style="margin-top:18px">
+          <span class="th-tag accent">行业领先</span><span class="th-tag">值得信赖</span><span class="th-tag">持续运营</span><span class="th-tag">多元包容</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 投稿 -->
+  <section class="th-section th-wrap" id="th-faq">
+    <span class="th-eyebrow">帮助与联系</span>
+    <h2>9151探花常见问题与投稿指引</h2>
+    <div class="th-two-col" style="margin-top:24px">
+      <div class="th-faq">
+        <details open>
+          <summary>9151探花是官方平台吗？</summary>
+          <p>是的。本站为 9151探花 官方网站，所有展映内容均由平台或认证创作者官方发布，带有统一标识，可追溯来源。</p>
+        </details>
+        <details>
+          <summary>如何投稿？需要什么条件？</summary>
+          <p>通过页面底部的投稿入口提交作品信息与试看链接，要求为原创、时长 3 分钟以上，并保证素材版权清晰。审核周期通常为 3–7 个工作日。</p>
+        </details>
+        <details>
+          <summary>作品可以下载或二次使用吗？</summary>
+          <p>标注“支持下载”的作品可获取高清文件用于个人学习；商业用途需通过联系邮箱申请授权，我们会在 5 个工作日内答复。</p>
+        </details>
+        <details>
+          <summary>专题企划的更新频率是怎样的？</summary>
+          <p>常设专题每月更新 1–2 期，限时企划按报名与制作进度推进。所有更新会同步在公告条与企业动态中提示。</p>
+        </details>
+        <details>
+          <summary>创作者入驻有收益分成吗？</summary>
+          <p>有。平台采用播放激励与专题稿酬结合的方式，具体比例在入驻协议中明示，不收取作品上架费用。</p>
+        </details>
+        <details>
+          <summary>如何反馈问题或举报侵权？</summary>
+          <p>可在任意作品页点击“复制链接”后发送至联系邮箱，或在反馈弹窗中提交说明。我们承诺 48 小时内响应处理。</p>
+        </details>
+      </div>
+      <div id="th-create">
+        <div class="th-cta" style="grid-template-columns:minmax(0,1fr)">
+          <div>
+            <h2 style="font-size:22px">成为 9151探花 的创作者</h2>
+            <p>无论你手上有的是手机还是一整套设备，只要你的作品足够认真，我们都愿意给它一个位置。投稿入口长期开放，期待你的第一支片子。</p>
+          </div>
+          <div class="th-cta-actions" style="flex-direction:row;flex-wrap:wrap">
+            <button class="th-btn th-btn-primary" type="button" data-th-open="submit">进入投稿入口</button>
+            <button class="th-btn th-btn-soft" type="button" data-th-open="feedback">反馈与举报</button>
+            <button class="th-btn th-btn-ghost" type="button" data-th-open="share" style="border-color:#f4efe6;color:#f4efe6">分享给朋友</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="th-footer">
+  <div class="th-wrap">
+    <div class="th-footer-grid">
+      <div class="th-footer-brand">
+        <div class="th-brand" style="margin-bottom:12px">
+          <span class="th-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 42 42" width="42" height="42"><rect width="42" height="42" fill="#232833"/><path d="M11 27c6-12 12-12 20-6-6 10-13 12-20 6z" fill="#ff6b3d"/><circle cx="29" cy="13" r="4" fill="#f5c542"/></svg>
+          </span>
+          <span class="th-brand-name" style="color:#fff">9151探花<small style="color:#9a958b">OFFICIAL VIDEO</small></span>
+        </div>
+        <p>9151探花官方网站，深耕原创影像与创作者内容生态的品牌平台。我们以真实、专业与长期主义为准绳，持续输出值得重看的精品内容。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <a href="#th-videos">热门视频</a>
+        <a href="#th-topics">专题企划</a>
+        <a href="#th-parse">品牌解读</a>
+        <a href="#th-authors">创作者</a>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <a href="#th-news">企业动态</a>
+        <a href="#th-reviews">用户口碑</a>
+        <a href="#th-faq">帮助中心</a>
+        <a href="#th-create">投稿入口</a>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <a href="#th-create">合作咨询</a>
+        <a href="#th-create">版权授权</a>
+        <a href="#th-create">反馈与举报</a>
+        <button class="th-footer-link" type="button" data-th-open="share" style="background:none;border:0;color:#c2bcb0;font-size:13.2px;padding:3px 0;text-align:left">分享官网</button>
+      </div>
+    </div>
+    <div class="th-footer-bottom">
+      <span>© 2026 9151探花 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创正版内容平台 · 抵制盗版 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="th-totop" id="th-totop" type="button" aria-label="回到顶部">↑</button>
+<div class="th-toast" id="th-toast" role="status" aria-live="polite"></div>
+
+<div class="th-modal-mask" id="th-modal-mask" role="dialog" aria-modal="true" aria-labelledby="th-modal-title">
+  <div class="th-modal">
+    <h3 id="th-modal-title">提示</h3>
+    <div id="th-modal-body"><p></p></div>
+    <button class="th-modal-close" type="button" id="th-modal-close">关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("th-burger");
+  var panel = document.getElementById("th-mobile-panel");
+  if (burger && panel) {
+    burger.addEventListener("click", function(){
+      var open = panel.classList.toggle("open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    panel.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        panel.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("th-toast");
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById("th-search-input");
+  var searchBtn = document.getElementById("th-search-btn");
+  var feedback = document.getElementById("th-search-feedback");
+  var searchable = [
+    "夜行档案","城市夜行影像计划","菜市场","新手剪辑","独立短片小影院","南方的雨季","给父母拍纪录片",
+    "阿榆的记录本","剪刀手老葛","周南的镜头","灯下放映室","第一支短片挑战","专题企划","投稿"
+  ];
+  function doSearch(){
+    if (!searchInput || !feedback) return;
+    var kw = searchInput.value.trim();
+    if (!kw) {
+      feedback.textContent = "请输入作品名、创作者或专题关键词，例如“剪辑”或“夜行”。";
+      feedback.classList.remove("active");
+      return;
+    }
+    var hits = searchable.filter(function(s){ return s.indexOf(kw) !== -1; });
+    if (hits.length) {
+      feedback.textContent = "已为你找到 " + hits.length + " 个相关结果：" + hits.slice(0,4).join("、");
+      feedback.classList.add("active");
+    } else {
+      feedback.textContent = "暂未找到与“" + kw + "”直接匹配的内容，可尝试更短的关键词，或前往投稿入口推荐选题。";
+      feedback.classList.remove("active");
+    }
+  }
+  if (searchBtn) searchBtn.addEventListener("click", doSearch);
+  if (searchInput) {
+    searchInput.addEventListener("keydown", function(e){
+      if (e.key === "Enter") { e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function parseNum(txt){
+    var n = parseInt(String(txt).replace(/[^0-9]/g, ""), 10);
+    return isNaN(n) ? 0 : n;
+  }
+  document.querySelectorAll("[data-th-like]").forEach(function(btn){
+    var id = btn.getAttribute("data-th-like");
+    var counter = document.querySelector('[data-th-like-count="' + id + '"]');
+    btn.addEventListener("click", function(){
+      var liked = btn.classList.toggle("liked");
+      btn.setAttribute("aria-pressed", liked ? "true" : "false");
+      btn.textContent = liked ? "♥ 已赞" : "♡ 点赞";
+      if (counter) {
+        var base = parseNum(counter.getAttribute("data-base") || counter.textContent);
+        if (!counter.getAttribute("data-base")) counter.setAttribute("data-base", String(base));
+        var next = liked ? base + 1 : base;
+        counter.textContent = next.toLocaleString("en-US");
+      }
+      showToast(liked ? "已点赞，感谢支持原创内容" : "已取消点赞");
+    });
+  });
+  document.querySelectorAll("[data-th-save]").forEach(function(btn){
+    var id = btn.getAttribute("data-th-save");
+    var counter = document.querySelector('[data-th-save-count="' + id + '"]');
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("saved");
+      btn.setAttribute("aria-pressed", saved ? "true" : "false");
+      btn.textContent = saved ? "★ 已收藏" : "☆ 收藏";
+      if (counter) {
+        var base = parseNum(counter.getAttribute("data-base") || counter.textContent);
+        if (!counter.getAttribute("data-base")) counter.setAttribute("data-base", String(base));
+        counter.textContent = (saved ? base + 1 : base).toLocaleString("en-US");
+      }
+      showToast(saved ? "已加入收藏，可从个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        resolve();
+      } catch (err) { reject(err); }
+    });
+  }
+  document.querySelectorAll("[data-th-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var title = btn.getAttribute("data-th-copy");
+      var fake = "9151探花官方作品页 #" + encodeURIComponent(title);
+      copyText(fake).then(function(){
+        showToast("链接已复制：可分享给朋友观看");
+      }).catch(function(){
+        showToast("复制失败，请手动选择标题复制");
+      });
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var mask = document.getElementById("th-modal-mask");
+  var modalTitle = document.getElementById("th-modal-title");
+  var modalBody = document.getElementById("th-modal-body");
+  var modalClose = document.getElementById("th-modal-close");
+  function closeModal(){
+    if (mask) mask.classList.remove("open");
+  }
+  function openModal(title, html){
+    if (!mask) return;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add("open");
+  }
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  if (mask) {
+    mask.addEventListener("click", function(e){
+      if (e.target === mask) closeModal();
+    });
+  }
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") closeModal();
+  });
+
+  document.querySelectorAll("[data-th-open]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var type = btn.getAttribute("data-th-open");
+      if (type === "share") {
+        openModal("分享 9151探花 官方网站", '<p>分享方式：微信 · 微博 · QQ · 复制链接。你可以把官网推荐给同样喜欢原创影像的朋友。</p><p style="font-size:13px;color:#6c7079">提示：点击下方按钮可复制一段分享文案。</p><button class="th-btn th-btn-primary" type="button" id="th-modal-copy-share" style="padding:8px 18px;font-size:13px">复制分享文案</button>');
+        var cp = document.getElementById("th-modal-copy-share");
+        if (cp) {
+          cp.addEventListener("click", function(){
+            copyText("推荐 9151探花 官方网站，一个认真做原创影像的内容平台。").then(function(){
+              showToast("分享文案已复制");
+              closeModal();
+            }).catch(function(){ showToast("复制失败，请手动复制"); });
+          });
+        }
+      } else if (type === "submit") {
+        openModal("投稿入口",
+          '<p style="font-size:13.5px">请填写作品基本信息，审核结果将在 3–7 个工作日内反馈。</p>' +
+          '<label for="th-sub-name">作品名称</label><input id="th-sub-name" type="text" placeholder="例如：夜行档案·第二卷">' +
+          '<label for="th-sub-author">创作者昵称</label><input id="th-sub-author" type="text" placeholder="你的社区昵称">' +
+          '<label for="th-sub-link">试看链接</label><input id="th-sub-link" type="text" placeholder="请输入可访问的试看地址">' +
+          '<p style="font-size:12px;color:#6c7079;margin-top:10px">提交即表示作品为原创，且素材版权清晰。</p>' +
+          '<button class="th-btn th-btn-primary" type="button" id="th-sub-send" style="padding:8px 18px;font-size:13px;margin-top:10px">提交作品</button>');
+        var send = document.getElementById("th-sub-send");
+        if (send) {
+          send.addEventListener("click", function(){
+            var name = (document.getElementById("th-sub-name") || {}).value || "";
+            var author = (document.getElementById("th-sub-author") || {}).value || "";
+            if (!name.trim() || !author.trim()) {
+              showToast("请填写作品名称与创作者昵称");
+              return;
+            }
+            closeModal();
+            showToast("投稿已提交，我们会尽快与你联系");
+          });
+        }
+      } else if (type === "feedback") {
+        openModal("反馈与举报",
+          '<p style="font-size:13.5px">如果你发现侵权内容、技术问题或对产品有建议，请在这里告诉我们。</p>' +
+          '<label for="th-fb-text">反馈内容</label><textarea id="th-fb-text" rows="3" placeholder="请描述具体情况"></textarea>' +
+          '<button class="th-btn th-btn-primary" type="button" id="th-fb-send" style="padding:8px 18px;font-size:13px;margin-top:12px">提交反馈</button>');
+        var fbSend = document.getElementById("th-fb-send");
+        if (fbSend) {
+          fbSend.addEventListener("click", function(){
+            var val = (document.getElementById("th-fb-text") || {}).value || "";
+            if (!val.trim()) { showToast("请先填写反馈内容"); return; }
+            closeModal();
+            showToast("反馈已收到，我们将在 48 小时内处理");
+          });
+        }
+      }
+    });
+  });
+
+  /* ---------- 作者弹窗 ---------- */
+  document.querySelectorAll("[data-th-author]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var parts = btn.getAttribute("data-th-author").split("|");
+      var name = parts[0] || "创作者";
+      var field = parts[1] || "";
+      var bio = parts[2] || "";
+      openModal(name + " · " + field,
+        '<p style="font-size:13.8px">' + bio + '</p>' +
+        '<p style="font-size:13px;color:#6c7079">该创作者的作品均在 9151探花 官方网站 官方发布，支持高清播放与收藏。</p>' +
+        '<button class="th-btn th-btn-primary" type="button" id="th-author-follow" style="padding:8px 18px;font-size:13px">关注创作者</button>');
+      var follow = document.getElementById("th-author-follow");
+      if (follow) {
+        follow.addEventListener("click", function(){
+          closeModal();
+          showToast("已关注 " + name + "，新作上线会通知你");
+        });
+      }
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById("th-totop");
+  if (toTop) {
+    window.addEventListener("scroll", function(){
+      if (window.scrollY > 620) toTop.classList.add("show");
+      else toTop.classList.remove("show");
+    }, { passive: true });
+    toTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  /* ---------- 卡片悬停增强（键盘可达） ---------- */
+  document.querySelectorAll(".th-focus-main, .th-author-card, .th-topic-card").forEach(function(card){
+    card.addEventListener("mouseenter", function(){ card.style.transition = "transform .2s ease, box-shadow .2s ease"; });
+  });
+
+})();
+</script>
+</body>
+  </html>
